@@ -4,7 +4,7 @@ import { useMultistepForm } from "./useMultistepForm"
 
 function App() {
 
-  const { steps, currentStepIndex ,step} = useMultistepForm([
+  const { steps, currentStepIndex ,step , isFirstStep ,back ,next} = useMultistepForm([
     <div>one</div>,
     <div>two</div>])
 
@@ -29,8 +29,8 @@ function App() {
         gap:".5rem",
         justifyContent:"flex-end",
       }}>
-          <button>back</button>
-          <button>next</button>
+          {!isFirstStep &&  <button type="button" onClick={back}>back</button>}
+          <button type="button" onClick={next}>next</button>
       </div>
     </form>
 

@@ -13,7 +13,7 @@ type AccountFormProps = AccountData  & {
 export function AccountForm ({email,password , updateFields}:AccountFormProps) {
 
     return(
-        <FormWrapper title="Account">
+        <FormWrapper  title="Account">
 
         <label htmlFor="">Email</label>
         <input type="email"

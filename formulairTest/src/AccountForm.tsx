@@ -6,7 +6,7 @@ type AccountData = {
     
 }
 
-type AccountFormProps = AccountData  & {
+type  AccountFormProps = AccountData  & {
 
     updateFields: (fields: Partial<AccountData>) => void
 }

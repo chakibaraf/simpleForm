@@ -10,7 +10,7 @@ type  AccountFormProps = AccountData  & {
 
     updateFields: (fields: Partial<AccountData>) => void
 }
-export function AccountForm ({email,password , updateFields}:AccountFormProps) {
+export function AccountForm  ({email,password , updateFields}:AccountFormProps) {
 
     return(
         <FormWrapper  title="Account">
